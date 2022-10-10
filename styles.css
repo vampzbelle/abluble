@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --white: #fff;
+  
+    --gray-50: #f0f2f5;
+    --gray-100: #e1e3e5;
+    --gray-200: #fcfdff;
+    --gray-300: #bfbfcc;
+    --gray-400: #787880;
+    --gray-500: #5a5a66;
+    --gray-550: #4f4f5b;
+    --gray-600: #41414c;
+  
+    --gray-300-o16: #fcfdff29;
+    --orange-400: #f7a241;
+    --orange-500: #f1972c;
+  
+    --red-500: #eb3b35;
+    --green-500: #36b336;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background: var(--gray-100);
+    color: var(--gray-200);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  
+  header {
+    height: 280px;
+    background-color: var(--gray-600);
+  }
+  
+  #menu {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    border-bottom: 1px solid var(--gray-550);
+  }
+  
+  #logo {
+    width: 208px;
+    height: 48px;
+  }
+  
+  #profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  #profile img {
+    width: 80px;
+    border-radius: 50%;
+    border: 4px solid #eba131;
+  }
+  #user {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  
+  #profile h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem; /*20px*/
+  }
+  
+  #profile a {
+    text-align: right;
+    color: #fdfcff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  #summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #status {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  #status-item h2 {
+    font-size: 1.5rem;
+    color: var(--gray-200);
+  }
+  #status-item span {
+    color: var(--gray-300);
+  }
+  
+  #addButton {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem;
+    background-color: var(--orange-500);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+  
+  #addButton:hover {
+    background-color: var(--orange-400);
+  }
+  
+  #addButton svg {
+    background-color: var(--gray-300-o16);
+    border-radius: 5px;
+    color: var(--gray-200);
+  }
+  
+  table {
+    color: var(--gray-600);
+    width: 100%;
+    margin-top: -2rem;
+  }
+  
+  table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--gray-100);
+    background-color: var(--gray-200);
+  }
+  
+  .tableBtn {
+    background-color: transparent;
+    color: var(--gray-600);
+    border: 1px solid var(--gray-600);
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  
+  .tableBtn:hover{
+    color: var(--orange-500);
+    border-color: var(--orange-500);
+  }
+  
